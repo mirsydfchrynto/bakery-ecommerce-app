@@ -1,0 +1,4 @@
+-- V2__add_user_details.sql
+
+ALTER TABLE users ADD COLUMN email VARCHAR(100) NOT NULL DEFAULT '';
+ALTER TABLE users ADD COLUMN phone_number VARCHAR(20) NOT NULL DEFAULT '';

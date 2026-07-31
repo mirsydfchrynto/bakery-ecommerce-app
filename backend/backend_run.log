@@ -1,0 +1,2977 @@
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :processResources UP-TO-DATE
+> Task :compileKotlin
+> Task :compileJava NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-31T15:04:23.891+07:00  INFO 224779 --- [bakery-ecommerce] [           main] c.b.ecommerce.EcommerceApplicationKt     : Starting EcommerceApplicationKt using Java 21.0.11 with PID 224779 (/home/irsyad/bakery_project/backend/build/classes/kotlin/main started by irsyad in /home/irsyad/bakery_project/backend)
+2026-07-31T15:04:23.895+07:00 DEBUG 224779 --- [bakery-ecommerce] [           main] c.b.ecommerce.EcommerceApplicationKt     : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-31T15:04:23.896+07:00  INFO 224779 --- [bakery-ecommerce] [           main] c.b.ecommerce.EcommerceApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2026-07-31T15:04:25.915+07:00  INFO 224779 --- [bakery-ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-31T15:04:26.034+07:00  INFO 224779 --- [bakery-ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 12 JPA repository interfaces.
+2026-07-31T15:04:27.177+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-31T15:04:27.200+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-31T15:04:27.200+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-31T15:04:27.272+07:00  INFO 224779 --- [bakery-ecommerce] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3282 ms
+2026-07-31T15:04:27.436+07:00 DEBUG 224779 --- [bakery-ecommerce] [           main] c.b.e.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-07-31T15:04:27.792+07:00  INFO 224779 --- [bakery-ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-31T15:04:28.013+07:00  INFO 224779 --- [bakery-ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c68a63c
+2026-07-31T15:04:28.014+07:00  INFO 224779 --- [bakery-ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-31T15:04:28.030+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/bakery_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC (MySQL 5.5)
+2026-07-31T15:04:28.142+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table `bakery_db`.`flyway_schema_history` does not exist yet
+2026-07-31T15:04:28.147+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.029s)
+2026-07-31T15:04:28.159+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.flywaydb.core.Flyway                 : All configured schemas are empty; a baseline marker will not be added to Flyway's schema history table. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended. See https://help.red-gate.com/help/flyway-cli12/help_4.aspx?topic=baseline-on-migrate for more info
+2026-07-31T15:04:28.163+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `bakery_db`.`flyway_schema_history` ...
+2026-07-31T15:04:28.271+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `bakery_db`: << Empty Schema >>
+2026-07-31T15:04:28.295+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema `bakery_db` to version "1 - init schema"
+2026-07-31T15:04:28.943+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema `bakery_db` to version "2 - add user details"
+2026-07-31T15:04:29.036+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema `bakery_db` to version "3 - add product name to order items"
+2026-07-31T15:04:29.092+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema `bakery_db` to version "4 - add profile picture url"
+2026-07-31T15:04:29.149+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema `bakery_db` to version "5 - add password reset tokens"
+2026-07-31T15:04:29.214+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema `bakery_db`, now at version v5 (execution time 00:00.785s)
+2026-07-31T15:04:29.426+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-31T15:04:29.548+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-31T15:04:30.275+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-31T15:04:30.372+07:00  WARN 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-07-31T15:04:30.377+07:00  WARN 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-31T15:04:30.397+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bakery_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bakery_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-31T15:04:30.417+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.incubating             : HHH90006001: Setting 'hibernate.type.preferred_uuid_jdbc_type' is still incubating (see Javadoc of corresponding member of 'org.hibernate.cfg.AvailableSettings')
+2026-07-31T15:04:30.874+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.incubating             : HHH90006001: Setting 'hibernate.type.preferred_uuid_jdbc_type' is still incubating (see Javadoc of corresponding member of 'org.hibernate.cfg.AvailableSettings')
+2026-07-31T15:04:32.305+07:00  INFO 224779 --- [bakery-ecommerce] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-31T15:04:32.316+07:00  INFO 224779 --- [bakery-ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-31T15:04:32.508+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-31T15:04:35.957+07:00  WARN 224779 --- [bakery-ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-31T15:04:36.144+07:00  WARN 224779 --- [bakery-ecommerce] [           main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4409a4ea-dc59-4733-9db2-790d64abbd9b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-31T15:04:36.155+07:00  INFO 224779 --- [bakery-ecommerce] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-31T15:04:36.408+07:00 DEBUG 224779 --- [bakery-ecommerce] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-07-31T15:04:37.291+07:00  INFO 224779 --- [bakery-ecommerce] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-31T15:04:37.306+07:00  INFO 224779 --- [bakery-ecommerce] [           main] c.b.ecommerce.EcommerceApplicationKt     : Started EcommerceApplicationKt in 14.136 seconds (process running for 14.78)
+Hibernate: 
+    select
+        count(*) 
+    from
+        roles r1_0
+Hibernate: 
+    select
+        o1_0.id,
+        o1_0.created_at,
+        o1_0.created_by,
+        o1_0.customer_id,
+        o1_0.ordered_at,
+        o1_0.status,
+        o1_0.total_amount,
+        o1_0.updated_at,
+        o1_0.updated_by 
+    from
+        orders o1_0 
+    where
+        o1_0.status=? 
+        and o1_0.created_at<?
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0 
+    where
+        (
+            u1_0.is_deleted = false
+        )
+Hibernate: 
+    select
+        count(*) 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        )
+✅ Seeded 80 highly curated premium bakery products.
+Hibernate: 
+    select
+        count(*) 
+    from
+        orders o1_0
+Hibernate: 
+    insert 
+    into
+        roles
+        (created_at, created_by, description, role_name, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        roles
+        (created_at, created_by, description, role_name, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, created_by, deleted_at, email, is_deleted, password_hash, phone_number, profile_picture_url, role_id, updated_at, updated_by, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, created_by, deleted_at, email, is_deleted, password_hash, phone_number, profile_picture_url, role_id, updated_at, updated_by, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        categories
+        (created_at, created_by, name, slug, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        categories
+        (created_at, created_by, name, slug, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        categories
+        (created_at, created_by, name, slug, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        categories
+        (created_at, created_by, name, slug, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted_at, description, is_deleted, name, price, status, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_images
+        (alt_text, created_at, created_by, is_primary, product_id, updated_at, updated_by, url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventories
+        (created_at, created_by, minimum_stock, product_id, reserved_stock, status, stock, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted_at,
+        u1_0.email,
+        u1_0.is_deleted,
+        u1_0.password_hash,
+        u1_0.phone_number,
+        u1_0.profile_picture_url,
+        u1_0.role_id,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        (
+            u1_0.is_deleted = false
+        ) 
+        and u1_0.username=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.created_by,
+        p1_0.deleted_at,
+        p1_0.description,
+        p1_0.is_deleted,
+        p1_0.name,
+        p1_0.price,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.updated_by 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        )
+Hibernate: 
+    insert 
+    into
+        orders
+        (created_at, created_by, customer_id, ordered_at, status, total_amount, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_items
+        (created_at, created_by, order_id, price_at_purchase, product_id, product_name, quantity, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_items
+        (created_at, created_by, order_id, price_at_purchase, product_id, product_name, quantity, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        orders
+        (created_at, created_by, customer_id, ordered_at, status, total_amount, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        order_items
+        (created_at, created_by, order_id, price_at_purchase, product_id, product_name, quantity, updated_at, updated_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-31T15:15:02.035+07:00  INFO 224779 --- [bakery-ecommerce] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-31T15:15:02.035+07:00  INFO 224779 --- [bakery-ecommerce] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-31T15:15:02.037+07:00  INFO 224779 --- [bakery-ecommerce] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-31T15:15:02.050+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/products?page=0&size=20
+2026-07-31T15:15:02.050+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/users/me
+2026-07-31T15:15:02.197+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/users/me
+2026-07-31T15:15:02.197+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/products?page=0&size=20
+2026-07-31T15:15:02.254+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.bakery.ecommerce.domain.iam.controller.UserController.getProfile(org.springframework.security.core.userdetails.UserDetails); target is of class [com.bakery.ecommerce.domain.iam.controller.UserController]
+2026-07-31T15:15:02.267+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.bakery.ecommerce.domain.iam.controller.UserController.getProfile(org.springframework.security.core.userdetails.UserDetails); target is of class [com.bakery.ecommerce.domain.iam.controller.UserController]
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.created_by,
+        p1_0.deleted_at,
+        p1_0.description,
+        p1_0.is_deleted,
+        p1_0.name,
+        p1_0.price,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.updated_by 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted_at,
+        u1_0.email,
+        u1_0.is_deleted,
+        u1_0.password_hash,
+        u1_0.phone_number,
+        u1_0.profile_picture_url,
+        u1_0.role_id,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=? 
+        and (
+            u1_0.is_deleted = false
+        )
+Hibernate: 
+    select
+        count(*) 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=?
+2026-07-31T15:15:02.305+07:00  WARN 224779 --- [bakery-ecommerce] [nio-8080-exec-2] c.b.e.exception.GlobalExceptionHandler   : Auth exception: USER-001 - User not found
+Hibernate: 
+    select
+        pi1_0.id,
+        pi1_0.alt_text,
+        pi1_0.created_at,
+        pi1_0.created_by,
+        pi1_0.is_primary,
+        pi1_0.product_id,
+        pi1_0.updated_at,
+        pi1_0.updated_by,
+        pi1_0.url 
+    from
+        product_images pi1_0 
+    where
+        pi1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.created_by,
+        i1_0.minimum_stock,
+        i1_0.product_id,
+        i1_0.reserved_stock,
+        i1_0.status,
+        i1_0.stock,
+        i1_0.updated_at,
+        i1_0.updated_by 
+    from
+        inventories i1_0 
+    where
+        i1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        c1_0.product_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.created_by,
+        c1_1.name,
+        c1_1.slug,
+        c1_1.updated_at,
+        c1_1.updated_by 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.id=c1_0.category_id 
+    where
+        c1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-31T15:15:02.459+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/api/v1/auth/refresh
+2026-07-31T15:15:02.460+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-07-31T15:15:02.463+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-07-31T15:15:02.470+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-07-31T15:15:02.471+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-07-31T15:15:02.471+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-07-31T15:15:02.588+07:00  WARN 224779 --- [bakery-ecommerce] [nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-07-31T15:15:15.677+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/auth/login
+2026-07-31T15:15:15.678+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-07-31T15:15:15.679+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted_at,
+        u1_0.email,
+        u1_0.is_deleted,
+        u1_0.password_hash,
+        u1_0.phone_number,
+        u1_0.profile_picture_url,
+        u1_0.role_id,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        (
+            u1_0.is_deleted = false
+        ) 
+        and (
+            u1_0.username=? 
+            or u1_0.email=? 
+            or u1_0.phone_number=?
+        )
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.description,
+        r1_0.role_name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-07-31T15:15:16.175+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/products?page=0&size=20
+2026-07-31T15:15:16.182+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/products?page=0&size=20
+2026-07-31T15:15:16.185+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/users/me
+2026-07-31T15:15:16.198+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/users/me
+2026-07-31T15:15:16.200+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-9] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.bakery.ecommerce.domain.iam.controller.UserController.getProfile(org.springframework.security.core.userdetails.UserDetails); target is of class [com.bakery.ecommerce.domain.iam.controller.UserController]
+2026-07-31T15:15:16.201+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-9] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.bakery.ecommerce.domain.iam.controller.UserController.getProfile(org.springframework.security.core.userdetails.UserDetails); target is of class [com.bakery.ecommerce.domain.iam.controller.UserController]
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted_at,
+        u1_0.email,
+        u1_0.is_deleted,
+        u1_0.password_hash,
+        u1_0.phone_number,
+        u1_0.profile_picture_url,
+        u1_0.role_id,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=? 
+        and (
+            u1_0.is_deleted = false
+        )
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.description,
+        r1_0.role_name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-07-31T15:15:18.016+07:00 DEBUG 224779 --- [bakery-ecommerce] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/products?page=1&size=20
+2026-07-31T15:15:18.021+07:00 DEBUG 224779 --- [bakery-ecommerce] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/products?page=1&size=20
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.created_by,
+        p1_0.deleted_at,
+        p1_0.description,
+        p1_0.is_deleted,
+        p1_0.name,
+        p1_0.price,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.updated_by 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=? 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=?
+Hibernate: 
+    select
+        pi1_0.id,
+        pi1_0.alt_text,
+        pi1_0.created_at,
+        pi1_0.created_by,
+        pi1_0.is_primary,
+        pi1_0.product_id,
+        pi1_0.updated_at,
+        pi1_0.updated_by,
+        pi1_0.url 
+    from
+        product_images pi1_0 
+    where
+        pi1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.created_by,
+        i1_0.minimum_stock,
+        i1_0.product_id,
+        i1_0.reserved_stock,
+        i1_0.status,
+        i1_0.stock,
+        i1_0.updated_at,
+        i1_0.updated_by 
+    from
+        inventories i1_0 
+    where
+        i1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        c1_0.product_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.created_by,
+        c1_1.name,
+        c1_1.slug,
+        c1_1.updated_at,
+        c1_1.updated_by 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.id=c1_0.category_id 
+    where
+        c1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-31T15:15:18.241+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/products?page=2&size=20
+2026-07-31T15:15:18.246+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/products?page=2&size=20
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.created_by,
+        p1_0.deleted_at,
+        p1_0.description,
+        p1_0.is_deleted,
+        p1_0.name,
+        p1_0.price,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.updated_by 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=? 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=?
+Hibernate: 
+    select
+        pi1_0.id,
+        pi1_0.alt_text,
+        pi1_0.created_at,
+        pi1_0.created_by,
+        pi1_0.is_primary,
+        pi1_0.product_id,
+        pi1_0.updated_at,
+        pi1_0.updated_by,
+        pi1_0.url 
+    from
+        product_images pi1_0 
+    where
+        pi1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.created_by,
+        i1_0.minimum_stock,
+        i1_0.product_id,
+        i1_0.reserved_stock,
+        i1_0.status,
+        i1_0.stock,
+        i1_0.updated_at,
+        i1_0.updated_by 
+    from
+        inventories i1_0 
+    where
+        i1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        c1_0.product_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.created_by,
+        c1_1.name,
+        c1_1.slug,
+        c1_1.updated_at,
+        c1_1.updated_by 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.id=c1_0.category_id 
+    where
+        c1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-31T15:15:43.321+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/products?page=3&size=20
+2026-07-31T15:15:43.328+07:00 DEBUG 224779 --- [bakery-ecommerce] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/products?page=3&size=20
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.created_by,
+        p1_0.deleted_at,
+        p1_0.description,
+        p1_0.is_deleted,
+        p1_0.name,
+        p1_0.price,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.updated_by 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=? 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        products p1_0 
+    where
+        (
+            p1_0.is_deleted = false
+        ) 
+        and p1_0.status=?
+Hibernate: 
+    select
+        pi1_0.id,
+        pi1_0.alt_text,
+        pi1_0.created_at,
+        pi1_0.created_by,
+        pi1_0.is_primary,
+        pi1_0.product_id,
+        pi1_0.updated_at,
+        pi1_0.updated_by,
+        pi1_0.url 
+    from
+        product_images pi1_0 
+    where
+        pi1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.created_by,
+        i1_0.minimum_stock,
+        i1_0.product_id,
+        i1_0.reserved_stock,
+        i1_0.status,
+        i1_0.stock,
+        i1_0.updated_at,
+        i1_0.updated_by 
+    from
+        inventories i1_0 
+    where
+        i1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        c1_0.product_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.created_by,
+        c1_1.name,
+        c1_1.slug,
+        c1_1.updated_at,
+        c1_1.updated_by 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.id=c1_0.category_id 
+    where
+        c1_0.product_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        o1_0.id,
+        o1_0.created_at,
+        o1_0.created_by,
+        o1_0.customer_id,
+        o1_0.ordered_at,
+        o1_0.status,
+        o1_0.total_amount,
+        o1_0.updated_at,
+        o1_0.updated_by 
+    from
+        orders o1_0 
+    where
+        o1_0.status=? 
+        and o1_0.created_at<?
+Hibernate: 
+    select
+        o1_0.id,
+        o1_0.created_at,
+        o1_0.created_by,
+        o1_0.customer_id,
+        o1_0.ordered_at,
+        o1_0.status,
+        o1_0.total_amount,
+        o1_0.updated_at,
+        o1_0.updated_by 
+    from
+        orders o1_0 
+    where
+        o1_0.status=? 
+        and o1_0.created_at<?
+2026-07-31T15:37:57.806+07:00  WARN 224779 --- [bakery-ecommerce] [l-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b4e8a29 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
