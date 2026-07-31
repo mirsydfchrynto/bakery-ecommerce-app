@@ -8,4 +8,4 @@ WORKDIR /app
 COPY --from=builder /app/build/libs/*.jar app.jar
 EXPOSE 8080
 # Strict memory limits for free tier hosting (Render/Koyeb 512MB RAM)
-ENTRYPOINT ["java", "-Xmx256m", "-Xms128m", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-Xmx128m", "-Xms64m", "-jar", "app.jar"]
