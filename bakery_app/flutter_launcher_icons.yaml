@@ -1,0 +1,5 @@
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "/home/irsyad/.gemini/antigravity-cli/brain/79d96449-1da9-42af-a5e2-9baf50cc4e4c/app_icon_bread_1785487424100.jpg"
+  min_sdk_android: 21
