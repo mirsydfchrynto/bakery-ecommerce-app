@@ -25,12 +25,30 @@ class BakeryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Bakery App',
-      theme: AppTheme.lightTheme,
-      initialRoute: AppPages.initial,
-      getPages: AppPages.routes,
-      debugShowCheckedModeBanner: false,
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: Stack(
+        children: [
+          GetMaterialApp(
+            title: 'Bakery App',
+            theme: AppTheme.lightTheme,
+            initialRoute: AppPages.initial,
+            getPages: AppPages.routes,
+            debugShowCheckedModeBanner: false,
+          ),
+          const Positioned(
+            bottom: 0,
+            right: 0,
+            child: Opacity(
+              opacity: 0.0,
+              child: Text(
+                'developer_watermark: mirsydfchrynto',
+                style: TextStyle(fontSize: 1),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

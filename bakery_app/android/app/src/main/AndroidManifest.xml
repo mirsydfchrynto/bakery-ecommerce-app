@@ -7,6 +7,8 @@
         android:label="bakery_app"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
+        <!-- WATERMARK DEVELOPER -->
+        <meta-data android:name="developer_watermark" android:value="mirsydfchrynto" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
