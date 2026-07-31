@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2026-07-31T20:40:00.000Z" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="bakery_usecase" name="Use Case">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- System Boundary Box -->
+        <mxCell id="system_box" value="Bakery E-Commerce System" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#f5f5f5;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="350" height="550" as="geometry" />
+        </mxCell>
+
+        <!-- ACTORS -->
+        <mxCell id="actor_pelanggan" value="Pelanggan" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="40" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="actor_admin" value="Admin (Sistem)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="200" width="40" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- USE CASES -->
+        <mxCell id="uc_login" value="Login / Register" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="system_box">
+          <mxGeometry x="105" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_katalog" value="Melihat Katalog" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="system_box">
+          <mxGeometry x="105" y="120" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_filter" value="Filter Kategori" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="system_box">
+          <mxGeometry x="105" y="200" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_keranjang" value="Tambah ke Keranjang" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="system_box">
+          <mxGeometry x="105" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_checkout" value="Checkout Pesanan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="system_box">
+          <mxGeometry x="105" y="360" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_stok" value="Kurangi Stok &amp; Update" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="system_box">
+          <mxGeometry x="105" y="450" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- CONNECTIONS FROM PELANGGAN -->
+        <mxCell id="edge_pel_login" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="actor_pelanggan" target="uc_login">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pel_katalog" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="actor_pelanggan" target="uc_katalog">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pel_filter" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="actor_pelanggan" target="uc_filter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pel_keranjang" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="actor_pelanggan" target="uc_keranjang">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pel_checkout" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="actor_pelanggan" target="uc_checkout">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- CONNECTIONS TO ADMIN -->
+        <mxCell id="edge_admin_checkout" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="uc_checkout" target="actor_admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_admin_stok" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="uc_stok" target="actor_admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
