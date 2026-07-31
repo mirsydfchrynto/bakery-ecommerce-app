@@ -1,0 +1,6 @@
+.git
+.gradle
+backend/build
+backend/out
+bakery_app
+docs
